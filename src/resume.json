@@ -7,7 +7,7 @@
     "phone": "+393201407882",
     "label": "Fullstack & Web3 Developer",
     "image": "https://github.com/ppezzull.png",
-    "summary": "Fullstack developer with expertise in blockchain technologies and traditional development. Computer science student at 42 Roma Luiss with proven skills in hackathon competitions. Trilingual professional combining technical knowledge with collaborative teamwork.",
+    "summary": "Fullstack developer with expertise in blockchain technologies, AI integration, and DevOps infrastructure. Computer science student at 42 Roma Luiss with proven skills in hackathon competitions and full-stack development. Trilingual professional combining technical knowledge with collaborative teamwork.",
     "email": "pezzullopietro04@gmail.com",
     "location": {
       "city": "Rome",
@@ -28,15 +28,8 @@
   },
   "education": [
     {
-      "startDate": "2024-09-15",
-      "area": "Telecommunication Engineering",
-      "studyType": "Bachelor's Degree",
-      "institution": "Sapienza University of Rome",
-      "website": "https://corsidilaurea.uniroma1.it/it/corso/2025/33497/home",
-      "courses": ["Linear Algebra", "Calculus", "Geometry"]
-    },
-    {
       "startDate": "2023-01-01",
+      "endDate": "2026-12-14",
       "area": "Computer Science",
       "studyType": "Common Core Certification",
       "institution": "42 Roma Luiss",
@@ -111,11 +104,27 @@
       "keywords": [
         "Alpine / Ubuntu / Debian",
         "Docker",
+        "Dockploy",
+        "VPS Management",
+        "Cloudflare Buckets",
+        "Domain Configuration",
         "Git / GitHub ",
         "CI/CD"
       ],
       "level": "Intermediate",
       "name": "Devops"
+    },
+    {
+      "keywords": [
+        "Prompt Engineering",
+        "Gemini API / Vortex",
+        "RAG (Retrieval-Augmented Generation)",
+        "AI Integration",
+        "Embeddings",
+        "LangChain"
+      ],
+      "level": "Intermediate",
+      "name": "AI"
     }
   ],
   "certificates": [
@@ -134,6 +143,23 @@
   ],
   "work": [
     {
+      "name": "Mood Global Services",
+      "position": "Fullstack Developer (Internship)",
+      "startDate": "2025-10-28",
+      "endDate": "2026-03-22",
+      "location": "Remote (Amsterdam)",
+      "website": "https://moodglobalservices.com/",
+      "summary": "Fullstack intern working on diverse technologies including DevOps, backend systems, AI integration, Web3 technologies, and frontend development. Connected with the team at Napul.ETH after winning the Chainlink prize in the web3 hackathon in Naples.",
+      "highlights": [
+        "System architecture design and evaluation",
+        "AI integrations and prompt engineering",
+        "Full-stack development across multiple tech stacks",
+        "DevOps and deployment workflows using GitHub",
+        "Collaborative remote development workflows",
+        "Working on Sitelab: a website builder using Vercel, v0-SDK, Gemini Vortex, and RAG embeddings"
+      ]
+    },
+    {
       "name": "Hackathons & ETHGlobal",
       "position": "Fullstack Bounty Hunter",
       "startDate": "2025-06-01",
@@ -141,7 +167,7 @@
       "location": "ETHGlobal Prague; Mantle cookathon; ETHGlobal Cannes; Napuleth; ETHGlobal DeFi Unite; Onchain Summer",
       "summary": "Completed six hackathons this summer: ETHGlobal Prague, Mantle cookathon, ETHGlobal Cannes, Napuleth, ETHGlobal DeFi Unite, and Onchain Summer. First three were solo; later events were team-based with two peers from 42 Roma Luiss.",
       "highlights": [
-        "Started zkMed at ETHGlobal Prague (solo) —  contract prototype",
+        "Started zkMed at ETHGlobal Prague (solo) \u2014  contract prototype",
         "Co-founded 1Balancer at DeFi Unite with two peers",
         "Learned Foundry for testing, deployment, and scripting",
         "Developed inspiration from existing projects and community feedback",
@@ -151,7 +177,7 @@
       ]
     },
     {
-      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript‑centric stacks, working mostly on backend services and some frontend integrations.",
+      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript\u2011centric stacks, working mostly on backend services and some frontend integrations.",
       "website": "https://originsolutions.it",
       "name": "Origin Solutions Srl",
       "location": "Rome, Italy",
@@ -169,6 +195,19 @@
     }
   ],
   "projects": [
+    {
+      "name": "Sitelab",
+      "startDate": "2025-10-15",
+      "description": "Website builder application leveraging modern web technologies and AI for enhanced content generation and system architecture. Combines Vercel's deployment platform, Vercel AI SDK (v0), Gemini Vortex for AI-powered features, and RAG embeddings for intelligent content retrieval.",
+      "highlights": [
+        "Vercel Gateway integration for seamless deployment",
+        "v0-SDK for component generation and frontend development",
+        "Gemini Vortex for AI-powered features and prompt engineering",
+        "Embeddings-based RAG (Retrieval-Augmented Generation) for intelligent content systems",
+        "Fullstack development combining AI integration with modern web architecture"
+      ],
+      "website": "https://moodglobalservices.com/"
+    },
     {
       "name": "zkMed",
       "startDate": "2025-06-01",
@@ -248,23 +287,41 @@
   "interests": [
     {
       "name": "Open Source",
-      "keywords": ["Developer tooling", "Blockchain", "Linux"]
+      "keywords": [
+        "Developer tooling",
+        "Blockchain",
+        "Linux"
+      ]
     },
     {
       "name": "Hackathons",
-      "keywords": ["Rapid prototyping", "Team collaboration", "Networking"]
+      "keywords": [
+        "Rapid prototyping",
+        "Team collaboration",
+        "Networking"
+      ]
     },
     {
       "name": "Basketball",
-      "keywords": ["Streetball", "3x3", "Ballislife"]
+      "keywords": [
+        "Streetball",
+        "3x3",
+        "Ballislife"
+      ]
     },
     {
       "name": "Fitness",
-      "keywords": ["Calisthenics", "Outdoor training"]
+      "keywords": [
+        "Calisthenics",
+        "Outdoor training"
+      ]
     },
     {
       "name": "Travel",
-      "keywords": ["Adventures", "Culinary Cultures"]
+      "keywords": [
+        "Adventures",
+        "Culinary Cultures"
+      ]
     }
   ],
   "references": [
