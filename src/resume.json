@@ -81,9 +81,12 @@
     {
       "keywords": [
         "Node.js",
+        "Rust",
+        "Python / FastAPI",
         "MongoDB / Postgres",
         "Supabase / Prisma",
         "API design (REST/GraphQL)",
+        "SSR (Server-Side Rendering)",
         "JWTs / Jose"
       ],
       "level": "Intermediate",
@@ -95,7 +98,8 @@
         "Thirdweb / Privy / Wagmi",
         "Foundry / Hardhat",
         "Viem / Ethers.js",
-        "Openzeppelin / Chainlink"
+        "Openzeppelin / Chainlink",
+        "Agent Payment Orchestration"
       ],
       "level": "Intermediate",
       "name": "Blockchain"
@@ -105,8 +109,9 @@
         "Alpine / Ubuntu / Debian",
         "Docker",
         "Dockploy",
+        "Self-Hosting / Dokploy Deployments",
         "VPS Management",
-        "Cloudflare Buckets",
+        "Cloudflare",
         "Domain Configuration",
         "Git / GitHub ",
         "CI/CD"
@@ -118,8 +123,12 @@
       "keywords": [
         "Prompt Engineering",
         "Gemini API / Vortex",
+        "v0 SDK",
+        "Vercel Gateway",
+        "AI Proxies / OpenAI-Compatible Gateways",
+        "Langfuse Tracing & Observability",
+        "Agent Configuration",
         "RAG (Retrieval-Augmented Generation)",
-        "AI Integration",
         "Embeddings",
         "LangChain"
       ],
@@ -146,7 +155,7 @@
       "name": "Mood Global Services",
       "position": "Fullstack Developer (Internship)",
       "startDate": "2025-10-28",
-      "endDate": "2026-03-22",
+      "endDate": "2026-10-31",
       "location": "Remote (Amsterdam)",
       "website": "https://moodglobalservices.com/",
       "summary": "Fullstack intern working on diverse technologies including DevOps, backend systems, AI integration, Web3 technologies, and frontend development. Connected with the team at Napul.ETH after winning the Chainlink prize in the web3 hackathon in Naples.",
@@ -196,17 +205,83 @@
   ],
   "projects": [
     {
-      "name": "Sitelab",
-      "startDate": "2025-10-15",
-      "description": "Website builder application leveraging modern web technologies and AI for enhanced content generation and system architecture. Combines Vercel's deployment platform, Vercel AI SDK (v0), Gemini Vortex for AI-powered features, and RAG embeddings for intelligent content retrieval.",
+      "name": "SiteLab",
+      "startDate": "2025-10-02",
+      "description": "Multi-tenant AI platform for automated end-to-end website generation, turning client intake into a deployed Next.js site. Evolved from a single Vercel + v0-SDK + Gemini Vortex prototype into a pnpm monorepo SaaS: a client questionnaire app, an operator backoffice, and three shared packages (schema, prompt-engine, supabase).",
       "highlights": [
-        "Vercel Gateway integration for seamless deployment",
-        "v0-SDK for component generation and frontend development",
-        "Gemini Vortex for AI-powered features and prompt engineering",
-        "Embeddings-based RAG (Retrieval-Augmented Generation) for intelligent content systems",
-        "Fullstack development combining AI integration with modern web architecture"
+        "pnpm monorepo of 2 Next.js apps + 3 shared packages, deployed per-app to Vercel",
+        "7-stage generation workflow engine (wireframe -> aggregation+Pexels -> icon-analyze -> init -> install-service-package -> edit -> generate/preview) with reconciliation",
+        "Vercel AI Gateway as a unified multi-provider router (Gemini, Vertex, OpenAI, Anthropic)",
+        "RAG embeddings treated as a versioned corpus: drift audits, migrations, and re-ingest/reflow scripts",
+        "Stripe billing (seat + metered usage, FX, promo) and a Telegram day-end performance bot for ops",
+        "Supabase with 3 schemas, RLS policies, and generated TypeScript types across 28 migrations"
       ],
-      "website": "https://moodglobalservices.com/"
+      "website": "https://www.sitelab.build/"
+    },
+    {
+      "name": "PolyAgents",
+      "startDate": "2026-04-03",
+      "endDate": "2026-06-24",
+      "description": "Autonomous AI trading vault for Polymarket's BTC \"Up or Down\" 5-minute binary markets, built for ETHGlobal Cannes 2026. A continuous cycle discovers the active market, queries an LLM for a directional decision, places passive two-sided limit orders, and feeds decision/outcome pairs back into a self-improving loop. Won the Hedera prize.",
+      "highlights": [
+        "Rust workspace (6 crates) with an explicit 8-state engine: IDLE -> DISCOVERING_MARKET -> READY -> QUOTING -> HOLDING_INVENTORY -> EXPIRY_GUARD -> ROLLING_OVER -> RECONCILING",
+        "axum HTTP API + rmcp MCP server (18 tools) exposing the engine to agents and the Next.js dashboard",
+        "Passive market-making on the Polymarket CLOB with a lagged reconciler computing fill + PnL post-resolution",
+        "Self-improving learning layer (OpenClaw) reflects on decision/outcome pairs and rewrites guidance injected into the next cycle",
+        "Three operating modes (simulator, demo with live CLOB orders, fully live) and AES-256-GCM per-vault key encryption",
+        "Polymarket CLOB/Gamma APIs, viem for on-chain USDC, Privy wallet auth, Terraform EC2 provisioning"
+      ],
+      "website": "https://ethglobal.com/showcase/polyagents-gt9jt"
+    },
+    {
+      "name": "CraftLead",
+      "startDate": "2026-04-25",
+      "description": "AI-powered lead-intelligence platform for the Craftale web agency. Aggregates freelance and web-dev project postings from 12+ sources, scores them against a capability taxonomy, and drafts personalized outreach through an autonomous 4-agent swarm.",
+      "highlights": [
+        "4-agent swarm (Planner -> Researcher -> Critic -> Executor) with an iterative confidence-gated feedback loop (re-injects until avg confidence >= 0.7)",
+        "12+ lead-source adapters (Upwork, Freelancer, LinkedIn, Indeed, Glassdoor, Web3.career, YC) behind a unified match-engine and quality filter",
+        "OpenClaw agent orchestration over MCP, backed by a self-hosted OpenAI-compatible gateway (Gemma 4 12B)",
+        "Typed inter-agent contract (PlannerTask / ResearchObservation / ExecutorReport) persisted to Supabase, with Langfuse tracing",
+        "Exposes its SDK as an MCP server so the same tools are callable from Claude, plus a credit system gating premium analysis"
+      ],
+      "website": "https://ethglobal.com/showcase/craftlead-19qsc"
+    },
+    {
+      "name": "use-dockploy-mcp",
+      "startDate": "2026-06-04",
+      "description": "A Claude Code skill that teaches Claude to deploy, monitor, and manage services on a Dokploy instance exclusively through the Dokploy MCP server. Distributable via npx, git submodule, or manual install.",
+      "highlights": [
+        "Solves a real context-window problem: Dokploy's project-all returns 140K+ characters, filtered into compact name+ID listings before Claude reads them",
+        "Codifies operational anti-patterns (e.g. *-search tools are unreliable -> fall back to project-all + filter)",
+        "Drop-in, app-agnostic skill with no coupling to a specific project's codebase"
+      ],
+      "website": "https://www.skills.sh/ppezzull/use-dockploy-mcp/run-dokploy-mcp"
+    },
+    {
+      "name": "chrome-dev",
+      "startDate": "2026-05-19",
+      "description": "macOS CLI that launches multiple Google Chrome instances with remote debugging enabled, each visually distinguished by a colored theme and a procedurally generated Dock icon showing its port number.",
+      "highlights": [
+        "Drives Chrome DevTools Protocol (CDP) over WebSockets to set per-instance browser theme colors without file patching",
+        "Generates real .icns Dock icons on the fly (Pillow) with the port number baked in as a badge",
+        "Per-instance isolated user data dirs and idempotent launch/stop commands (single, all, per-port)",
+        "Dependency-light pure Python (Pillow + websocket-client), no Chrome extension required"
+      ],
+      "website": "https://github.com/ppezzull/chrome-dev"
+    },
+    {
+      "name": "Langfuse-OpenAI-Proxy",
+      "startDate": "2026-05-08",
+      "description": "A reverse proxy and observability gateway that sits transparently between an LLM application and any OpenAI-compatible backend (LiteLLM, vLLM, Ollama). Its job is per-request Langfuse tracing with per-project credential routing — every call carries its own Langfuse key pair, the proxy traces the generation and flushes, with zero changes to the calling app. Published as a PyPI package and deployable as a single Docker container on a Dokploy network.",
+      "highlights": [
+        "Per-request, per-project Langfuse tracing: each call routes to the correct Langfuse project via its own credential pair, with no shared master key",
+        "Anthropic Messages API shim (/v1/messages) that translates Claude's wire format to/from OpenAI, including streaming SSE with thinking/text/tool-use blocks",
+        "Deep Ollama reasoning-model support: routes `think` to the native API, JSON-Schema sanitizer for llama.cpp grammars, and a per-model thinking-profile table",
+        "Production streaming guardrails: wall-clock generation cap under Cloudflare's 524 ceiling and an Ollama concurrency semaphore to prevent VRAM eviction",
+        "SSRF-hardened host validation, path-traversal rejection, and shared-token auth on the Anthropic shim (fails closed)",
+        "Async FastAPI with detached Langfuse flush off the response critical path, plus real token-usage capture even on early generator teardown"
+      ],
+      "website": "https://github.com/CraftaleAgency/Langfuse-OpenAI-Proxy"
     },
     {
       "name": "zkMed",
@@ -251,6 +326,12 @@
   ],
   "awards": [
     {
+      "title": "Hedera Prize Winner — ETHGlobal Cannes",
+      "date": "2026-01-01",
+      "awarder": "Hedera and ETHGlobal",
+      "summary": "Won the Hedera prize at ETHGlobal Cannes."
+    },
+    {
       "title": "Urbe Campus Hackathon Winner",
       "date": "2024-04-14",
       "awarder": "Urbe.eth and BuidlGuidl",
@@ -281,7 +362,7 @@
     },
     {
       "language": "English",
-      "fluency": "B2 proficiency"
+      "fluency": "C1 proficiency"
     }
   ],
   "interests": [
