@@ -122,6 +122,13 @@ function injectLinks(html, resume) {
       .css('color', 'inherit')
       .css('text-decoration', 'none')
       .text(linkText);
+    // External-link marker: injected links inherit color and have no
+    // underline, so without it they are visually undetectable
+    a.append(
+      $('<span>')
+        .text('↗')
+        .css({ 'font-size': '0.8em', 'margin-left': '2px' })
+    );
     el.empty().append(a);
   }
 
