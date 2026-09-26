@@ -4,10 +4,9 @@
   },
   "basics": {
     "name": "Pietro Jairo Pezzullo",
-    "phone": "+393201407882",
-    "label": "Fullstack & Web3 Developer",
+    "label": "Backend & AI Engineer",
     "image": "https://github.com/ppezzull.png",
-    "summary": "Fullstack developer with expertise in blockchain technologies, AI integration, and DevOps infrastructure. Computer science student at 42 Roma Luiss with proven skills in hackathon competitions and full-stack development. Trilingual professional combining technical knowledge with collaborative teamwork.",
+    "summary": "Fullstack developer with expertise in blockchain technologies, AI integration, and DevOps infrastructure. Computer science graduate of 42 Roma Luiss with proven skills in hackathon competitions and full-stack development. Trilingual professional combining technical knowledge with collaborative teamwork.",
     "email": "pezzullopietro04@gmail.com",
     "location": {
       "city": "Rome",
@@ -29,7 +28,7 @@
   "education": [
     {
       "startDate": "2023-01-01",
-      "endDate": "2026-12-14",
+      "endDate": "2025-12-01",
       "area": "Computer Science",
       "studyType": "Common Core Certification",
       "institution": "42 Roma Luiss",
@@ -54,7 +53,7 @@
       "startDate": "2020-10-01",
       "area": "Corporate Information Systems",
       "studyType": "Technical Diploma",
-      "institution": "IIS Leopoldo Pirelli, Via Assisi, Rome, Italy",
+      "institution": "IIS Leopoldo Pirelli, Rome, Italy",
       "website": "https://www.leopoldopirelli.edu.it/indirizzo-sistemi-informativi-aziendali-sia/",
       "courses": [
         "Law • Political Economy • Accounting",
@@ -75,7 +74,6 @@
         "React / Next.js / Vite",
         "Shadcn / Acernity / Origin UI"
       ],
-      "level": "Intermediate",
       "name": "Frontend"
     },
     {
@@ -89,7 +87,6 @@
         "SSR (Server-Side Rendering)",
         "JWTs / Jose"
       ],
-      "level": "Intermediate",
       "name": "Backend"
     },
     {
@@ -101,28 +98,25 @@
         "Openzeppelin / Chainlink",
         "Agent Payment Orchestration"
       ],
-      "level": "Intermediate",
       "name": "Blockchain"
     },
     {
       "keywords": [
         "Alpine / Ubuntu / Debian",
         "Docker",
-        "Dockploy",
         "Self-Hosting / Dokploy Deployments",
         "VPS Management",
         "Cloudflare",
         "Domain Configuration",
-        "Git / GitHub ",
+        "Git / GitHub",
         "CI/CD"
       ],
-      "level": "Intermediate",
       "name": "Devops"
     },
     {
       "keywords": [
         "Prompt Engineering",
-        "Gemini API / Vortex",
+        "Gemini API / Vertex AI",
         "v0 SDK",
         "Vercel Gateway",
         "AI Proxies / OpenAI-Compatible Gateways",
@@ -132,7 +126,6 @@
         "Embeddings",
         "LangChain"
       ],
-      "level": "Intermediate",
       "name": "AI"
     }
   ],
@@ -140,32 +133,43 @@
     {
       "name": "PCAP - Certified Associate in Python Programming",
       "issuer": "Python Institute",
-      "date": "2022-06-01",
-      "website": "https://drive.google.com/file/d/1uBfRAla8zoeob5FGbB2qeJmBm_lxH0NC/view"
+      "date": "2022-06-01"
     },
     {
       "name": "TOEFL, iBT",
       "issuer": "Educational Testing Service",
-      "date": "2025-02-02",
-      "website": "https://drive.google.com/file/d/1o60VxCmVorsfx7HgDpNcZMvTR3iHYg0-/view?usp=sharing"
+      "date": "2025-02-02"
     }
   ],
   "work": [
     {
+      "name": "Craftale Web Agency",
+      "position": "Freelance Developer",
+      "startDate": "2025-07-01",
+      "location": "Remote (Italy)",
+      "website": "https://craftale.it",
+      "summary": "Freelance developer at Craftale, a web agency run together with another freelancer, Flavio Biondo; own the AI and infrastructure stack end to end alongside full-stack Next.js/Supabase delivery.",
+      "highlights": [
+        "Delivered 7 client projects (Horizon voucher platform, Lime CRM, e-commerce and client sites) plus 5 internal products",
+        "Self-hosted LLM stack: LiteLLM OpenAI-compatible gateway, Onyx chat API, and Langfuse observability on every AI call",
+        "CraftLead: agentic lead-hunting platform (4-agent swarm, 6-signal match engine) running the agency's own commission pipeline",
+        "Self-hosted infrastructure on a 3-machine Tailscale fleet: CraftHost GPU server serving 29 local models at ~660 LLM requests/day, plus VPS nodes running ~40 services in 79 Docker containers on Dokploy with zero public ports via Cloudflare tunnels"
+      ]
+    },
+    {
       "name": "Mood Global Services",
-      "position": "Fullstack Developer (Internship)",
+      "position": "Backend Software Developer & AI Specialist",
       "startDate": "2025-10-28",
       "endDate": "2026-10-31",
       "location": "Remote (Amsterdam)",
       "website": "https://moodglobalservices.com/",
-      "summary": "Fullstack intern working on diverse technologies including DevOps, backend systems, AI integration, Web3 technologies, and frontend development. Connected with the team at Napul.ETH after winning the Chainlink prize in the web3 hackathon in Naples.",
+      "summary": "Backend and AI specialist across two products: SiteLab, an AI website-generation platform (led development and product design), and the AI layer of a client platform (conversational agent, search, multilingual support). Joined after winning the Chainlink prize at the Naples web3 hackathon with the Napul.ETH team.",
       "highlights": [
-        "System architecture design and evaluation",
-        "AI integrations and prompt engineering",
-        "Full-stack development across multiple tech stacks",
-        "DevOps and deployment workflows using GitHub",
-        "Collaborative remote development workflows",
-        "Working on Sitelab: a website builder using Vercel, v0-SDK, Gemini Vortex, and RAG embeddings"
+        "Led development and product design of SiteLab, an AI website-generation platform: typed schemas, provider-agnostic LLM routing, delta-prompt edits, automated Vercel deploys",
+        "Built an AI-powered conversational agent with search, ranking, and four-language support",
+        "MCP server exposing a controlled tool surface to LLM agents over backend services",
+        "Production chat app in Next.js 16 / React 19 with streaming responses, hardened by red-team testing and CI smoke suites",
+        "Skills gained: TypeScript/Node service design, LLM integration patterns (agents, RAG, prompt engineering)"
       ]
     },
     {
@@ -176,13 +180,11 @@
       "location": "ETHGlobal Prague; Mantle cookathon; ETHGlobal Cannes; Napuleth; ETHGlobal DeFi Unite; Onchain Summer",
       "summary": "Completed six hackathons this summer: ETHGlobal Prague, Mantle cookathon, ETHGlobal Cannes, Napuleth, ETHGlobal DeFi Unite, and Onchain Summer. First three were solo; later events were team-based with two peers from 42 Roma Luiss.",
       "highlights": [
-        "Started zkMed at ETHGlobal Prague (solo) \u2014  contract prototype",
+        "Started zkMed at ETHGlobal Prague (solo) as a contract prototype",
         "Co-founded 1Balancer at DeFi Unite with two peers",
         "Learned Foundry for testing, deployment, and scripting",
-        "Developed inspiration from existing projects and community feedback",
         "Built my own reusable Scaffold template for rapid prototyping",
-        "Won small bounties and credits across events",
-        "Networking with industry professionals and fellow developers"
+        "Won small bounties and credits across events"
       ]
     },
     {
@@ -190,7 +192,7 @@
       "website": "https://originsolutions.it",
       "name": "Origin Solutions Srl",
       "location": "Rome, Italy",
-      "position": "Backend Software Developer (Internship)",
+      "position": "Backend Software Developer",
       "startDate": "2024-11-01",
       "endDate": "2025-06-01",
       "highlights": [
@@ -207,14 +209,14 @@
     {
       "name": "SiteLab",
       "startDate": "2025-10-02",
-      "description": "Multi-tenant AI platform for automated end-to-end website generation, turning client intake into a deployed Next.js site. Evolved from a single Vercel + v0-SDK + Gemini Vortex prototype into a pnpm monorepo SaaS: a client questionnaire app, an operator backoffice, and three shared packages (schema, prompt-engine, supabase).",
+      "description": "Multi-tenant AI platform turning client intake into a deployed Next.js site. Evolved from a Vercel + v0-SDK prototype into a production pnpm monorepo SaaS: client questionnaire app, operator backoffice, and three shared packages.",
       "highlights": [
-        "pnpm monorepo of 2 Next.js apps + 3 shared packages, deployed per-app to Vercel",
-        "7-stage generation workflow engine (wireframe -> aggregation+Pexels -> icon-analyze -> init -> install-service-package -> edit -> generate/preview) with reconciliation",
-        "Vercel AI Gateway as a unified multi-provider router (Gemini, Vertex, OpenAI, Anthropic)",
-        "RAG embeddings treated as a versioned corpus: drift audits, migrations, and re-ingest/reflow scripts",
-        "Stripe billing (seat + metered usage, FX, promo) and a Telegram day-end performance bot for ops",
-        "Supabase with 3 schemas, RLS policies, and generated TypeScript types across 28 migrations"
+        "Next.js 16, React 19, TypeScript strict, Tailwind 4, Vitest, 6-gate CI",
+        "9+ durable workflows on Workflow DevKit: questionnaire -> RAG brief -> wireframes -> Next.js via V0 SDK -> preview -> publish",
+        "Vercel AI Gateway multi-provider routing (OpenAI, Anthropic, Google) with AI cost tracking and generation analytics",
+        "Automated leadgen pipeline turning raw leads into generated sites; sites auto-deploy to <subdomain>.sitelab.build",
+        "Stripe billing (seat + metered usage) with multi-tenant model tiers for the Italian SMB market",
+        "Supabase Postgres with RLS on every table, pgvector, and generated types across 92 migrations"
       ],
       "website": "https://www.sitelab.build/"
     },
@@ -222,12 +224,12 @@
       "name": "PolyAgents",
       "startDate": "2026-04-03",
       "endDate": "2026-06-24",
-      "description": "Autonomous AI trading vault for Polymarket's BTC \"Up or Down\" 5-minute binary markets, built for ETHGlobal Cannes 2026. A continuous cycle discovers the active market, queries an LLM for a directional decision, places passive two-sided limit orders, and feeds decision/outcome pairs back into a self-improving loop. Won the Hedera prize.",
+      "description": "Autonomous AI trading vault for Polymarket's BTC 5-minute binary markets, built for ETHGlobal Cannes 2026 (won the Hedera prize). A continuous loop discovers the market, asks an LLM for a directional call, places two-sided limit orders, and feeds outcomes back into a self-improving loop.",
       "highlights": [
-        "Rust workspace (6 crates) with an explicit 8-state engine: IDLE -> DISCOVERING_MARKET -> READY -> QUOTING -> HOLDING_INVENTORY -> EXPIRY_GUARD -> ROLLING_OVER -> RECONCILING",
+        "Rust workspace (6 crates) with an explicit 8-state engine",
         "axum HTTP API + rmcp MCP server (18 tools) exposing the engine to agents and the Next.js dashboard",
         "Passive market-making on the Polymarket CLOB with a lagged reconciler computing fill + PnL post-resolution",
-        "Self-improving learning layer (OpenClaw) reflects on decision/outcome pairs and rewrites guidance injected into the next cycle",
+        "Self-improving layer (OpenClaw) that rewrites guidance from decision/outcome pairs for the next cycle",
         "Three operating modes (simulator, demo with live CLOB orders, fully live) and AES-256-GCM per-vault key encryption",
         "Polymarket CLOB/Gamma APIs, viem for on-chain USDC, Privy wallet auth, Terraform EC2 provisioning"
       ],
@@ -238,8 +240,8 @@
       "startDate": "2026-04-25",
       "description": "AI-powered lead-intelligence platform for the Craftale web agency. Aggregates freelance and web-dev project postings from 12+ sources, scores them against a capability taxonomy, and drafts personalized outreach through an autonomous 4-agent swarm.",
       "highlights": [
-        "4-agent swarm (Planner -> Researcher -> Critic -> Executor) with an iterative confidence-gated feedback loop (re-injects until avg confidence >= 0.7)",
-        "12+ lead-source adapters (Upwork, Freelancer, LinkedIn, Indeed, Glassdoor, Web3.career, YC) behind a unified match-engine and quality filter",
+        "4-agent swarm (Planner -> Researcher -> Critic -> Executor) with a confidence-gated feedback loop",
+        "12+ lead-source adapters (Upwork, LinkedIn, Web3.career and more) behind a unified match engine",
         "OpenClaw agent orchestration over MCP, backed by a self-hosted OpenAI-compatible gateway (Gemma 4 12B)",
         "Typed inter-agent contract (PlannerTask / ResearchObservation / ExecutorReport) persisted to Supabase, with Langfuse tracing",
         "Exposes its SDK as an MCP server so the same tools are callable from Claude, plus a credit system gating premium analysis"
@@ -247,47 +249,35 @@
       "website": "https://ethglobal.com/showcase/craftlead-19qsc"
     },
     {
-      "name": "use-dockploy-mcp",
-      "startDate": "2026-06-04",
-      "description": "A Claude Code skill that teaches Claude to deploy, monitor, and manage services on a Dokploy instance exclusively through the Dokploy MCP server. Distributable via npx, git submodule, or manual install.",
+      "name": "Horizon",
+      "startDate": "2026-04-01",
+      "description": "Voucher platform delivered to a client through Craftale: customers buy experience vouchers via Stripe, with Supabase edge functions handling fulfillment and an AI form-processing pipeline structuring intake.",
       "highlights": [
-        "Solves a real context-window problem: Dokploy's project-all returns 140K+ characters, filtered into compact name+ID listings before Claude reads them",
-        "Codifies operational anti-patterns (e.g. *-search tools are unreliable -> fall back to project-all + filter)",
-        "Drop-in, app-agnostic skill with no coupling to a specific project's codebase"
+        "Stripe payment flow for voucher purchase, with Supabase edge functions driving fulfillment",
+        "AI form processing to structure customer intake",
+        "Client delivery with post-launch care (updates, backups, monitoring) on the agency's self-hosted stack"
       ],
-      "website": "https://www.skills.sh/ppezzull/use-dockploy-mcp/run-dokploy-mcp"
-    },
-    {
-      "name": "chrome-dev",
-      "startDate": "2026-05-19",
-      "description": "macOS CLI that launches multiple Google Chrome instances with remote debugging enabled, each visually distinguished by a colored theme and a procedurally generated Dock icon showing its port number.",
-      "highlights": [
-        "Drives Chrome DevTools Protocol (CDP) over WebSockets to set per-instance browser theme colors without file patching",
-        "Generates real .icns Dock icons on the fly (Pillow) with the port number baked in as a badge",
-        "Per-instance isolated user data dirs and idempotent launch/stop commands (single, all, per-port)",
-        "Dependency-light pure Python (Pillow + websocket-client), no Chrome extension required"
-      ],
-      "website": "https://github.com/ppezzull/chrome-dev"
+      "website": "https://craftale.it"
     },
     {
       "name": "Langfuse-OpenAI-Proxy",
       "startDate": "2026-05-08",
-      "description": "A reverse proxy and observability gateway that sits transparently between an LLM application and any OpenAI-compatible backend (LiteLLM, vLLM, Ollama). Its job is per-request Langfuse tracing with per-project credential routing — every call carries its own Langfuse key pair, the proxy traces the generation and flushes, with zero changes to the calling app. Published as a PyPI package and deployable as a single Docker container on a Dokploy network.",
+      "endDate": "2026-09-10",
+      "description": "A reverse proxy and observability gateway between an LLM app and any OpenAI-compatible backend (LiteLLM, vLLM, Ollama): per-request Langfuse tracing with per-project credential routing, zero changes to the calling app. Published on PyPI; deployable as a single Docker container.",
       "highlights": [
-        "Per-request, per-project Langfuse tracing: each call routes to the correct Langfuse project via its own credential pair, with no shared master key",
-        "Anthropic Messages API shim (/v1/messages) that translates Claude's wire format to/from OpenAI, including streaming SSE with thinking/text/tool-use blocks",
-        "Deep Ollama reasoning-model support: routes `think` to the native API, JSON-Schema sanitizer for llama.cpp grammars, and a per-model thinking-profile table",
-        "Production streaming guardrails: wall-clock generation cap under Cloudflare's 524 ceiling and an Ollama concurrency semaphore to prevent VRAM eviction",
+        "Anthropic Messages API shim (/v1/messages) translating Claude's wire format to/from OpenAI, including streaming SSE with thinking/text/tool-use blocks",
+        "Deep Ollama reasoning-model support: native `think` routing, JSON-Schema sanitizer for llama.cpp grammars",
+        "Streaming guardrails: wall-clock cap under Cloudflare's 524 ceiling and an Ollama concurrency semaphore",
         "SSRF-hardened host validation, path-traversal rejection, and shared-token auth on the Anthropic shim (fails closed)",
-        "Async FastAPI with detached Langfuse flush off the response critical path, plus real token-usage capture even on early generator teardown"
+        "Async FastAPI with detached Langfuse flush off the response path, plus real token-usage capture on early teardown"
       ],
       "website": "https://github.com/CraftaleAgency/Langfuse-OpenAI-Proxy"
     },
     {
       "name": "zkMed",
       "startDate": "2025-06-01",
-      "endDate": "",
-      "description": "Privacy-preserving healthcare insurance solution. Automates premium collection and claim payouts using stablecoins. Uses vlayer MailProofs for DKIM email verification, Chainlink Automation for scheduled payments, and insurer-specific pools earning ~4% APY with a 50% yield share to zkMed.",
+      "endDate": "2025-08-31",
+      "description": "Privacy-preserving healthcare insurance: stablecoin premium collection and automated claim payouts, with vlayer MailProofs for DKIM verification, Chainlink Automation for scheduled payments, and insurer pools earning ~4% APY.",
       "highlights": [
         "Won bounties: CyberScope audit credit, Base USDC grant, Chainlink acceleration",
         "Privy embedded wallets for social login and account abstraction",
@@ -300,33 +290,20 @@
     {
       "name": "Scaffold-Privy-AA",
       "startDate": "2025-07-01",
-      "description": "Developer toolkit for building Ethereum dapps with Privy social login and account abstraction, paired with Supabase for row-level security via a server-side token exchange. Includes a Next.js frontend, Foundry contracts, shadcn UI components, and ready-to-run local Supabase configurations. This custom scaffold replaces DaisyUI and RainbowKit with shadcn and Privy and provides three development branches: foundry, hardhat, and supabase.",
+      "endDate": "2025-09-01",
+      "description": "Developer toolkit for Ethereum dapps with Privy social login and account abstraction, paired with Supabase for row-level security via a server-side token exchange. Next.js frontend, Foundry contracts, shadcn UI, and three branches: foundry, hardhat, supabase.",
       "highlights": [
         "Privy-based social login and account abstraction (wallets + embedded)",
         "Server Action verifies Privy JWT and mints short-lived Supabase-signed JWT for RLS",
-        "Supabase admin upsert flow mapping Privy DID to internal user UUID",
         "Contract hot-reload workflow with Foundry and frontend auto-adapting to contract changes",
-        "Prebuilt UI components (shadcn) and web3 hooks (wagmi/viem) for rapid development",
-        "Local and production-ready Supabase signing key configurations (HS256 for local, ES256/JWKS for hosted)"
+        "Prebuilt shadcn UI components and web3 hooks (wagmi/viem) for rapid development"
       ],
       "website": "https://github.com/ppezzull/Scaffold-Privy-AA"
-    },
-    {
-      "name": "1Balancer",
-      "startDate": "2025-08-01",
-      "description": "Automated, capital-efficient portfolio rebalancer prototype for Base L2. On-chain Balancer contracts hold custody and targets; a Next.js + Postgres off-chain orchestrator handles pricing, drift detection, order construction and signing. Rebalancing uses 1inch limit orders via an authenticated proxy for on-chain execution when triggered.",
-      "highlights": [
-        "Next.js frontend with server actions and a bot for off-chain orchestration.",
-        "1inch integration for quotes, charts and limit orders via an authenticated proxy.",
-        "Architecture supports EIP-712 signed proposals and EIP-1271 (contract) signature verification for on-chain execution.",
-        "Designed for both serverless (Vercel cron) and continuous self-hosted bot modes (PM2/systemd)."
-      ],
-      "website": "https://devfolio.co/projects/balancer-6d59"
     }
   ],
   "awards": [
     {
-      "title": "Hedera Prize Winner — ETHGlobal Cannes",
+      "title": "Hedera Prize Winner at ETHGlobal Cannes",
       "date": "2026-01-01",
       "awarder": "Hedera and ETHGlobal",
       "summary": "Won the Hedera prize at ETHGlobal Cannes."
@@ -337,18 +314,6 @@
       "awarder": "Urbe.eth and BuidlGuidl",
       "summary": "Pitched the project and led the winning team; implemented the smart contract using Solidity and developed the endpoints for the Next.js frontend to consume, building a blockchain fundraising platform with scaffold-eth.",
       "website": "https://www.linkedin.com/posts/pietro-jairo-pezzullo_im-thrilled-to-announce-that-our-team-emerged-activity-7177659459882672128-JXm7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADsM03wBEsoY4tKY0R7JbZ75TclnMY4SiLc"
-    },
-    {
-      "title": "Highschool Institute Award for Academic Excellence",
-      "date": "2023-05-18",
-      "awarder": "IIS Leopoldo Pirelli",
-      "summary": "Awarded for winning Robotics competition"
-    },
-    {
-      "title": "Highschool Institute Award for Academic Excellence",
-      "date": "2022-05-24",
-      "awarder": "IIS Leopoldo Pirelli",
-      "summary": "Awarded for concluding the Devnet Scholarship program and achieving Python certification"
     }
   ],
   "languages": [
@@ -403,13 +368,6 @@
         "Adventures",
         "Culinary Cultures"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Urbe.eth",
-      "reference": "Associate member of Urbe, Rome's largest community of blockchain developers.",
-      "website": "https://urbe.build"
     }
   ]
 }

@@ -36,6 +36,16 @@ function loadResumeData(filePath) {
   return JSON.parse(fs.readFileSync(path.resolve(filePath), 'utf8'));
 }
 
+// Projects render in array order; keep them reverse-chronological (newest
+// startDate first) regardless of how the JSON is edited. ISO dates sort
+// lexicographically.
+function sortProjectsByStartDateDesc(projects) {
+  if (!Array.isArray(projects)) return projects;
+  return [...projects].sort((a, b) =>
+    (b.startDate || '').localeCompare(a.startDate || '')
+  );
+}
+
 function getThemeRender() {
   const theme = require('jsonresume-theme-professional');
   const render = theme.render || (theme.default && theme.default.render);
@@ -57,6 +67,31 @@ function rewriteFontUrls(html) {
 function injectBaseFontSize(html, sizePx) {
   const tag = `<style>html{font-size:${sizePx}}</style>`;
   return html.replace('</head>', `${tag}</head>`);
+}
+
+// The theme's DateRange hardcodes an em dash ("&nbsp;—&nbsp;") between dates.
+// Swap it for an en dash so no em dashes appear anywhere in the output.
+function replaceDateRangeDashes(html) {
+  return html.replace(/&nbsp;—&nbsp;/g, '&nbsp;–&nbsp;');
+}
+
+// The theme hardcodes section order (Education before Work/Projects) in its
+// Resume component; reordering here survives node_modules reinstalls.
+// Sections are a plain wrapper <div> around a styled <div><h2>Title</h2>…,
+// so locate them by heading text rather than styled-components class names.
+function moveSectionAfter(html, sectionTitle, afterTitle) {
+  const $ = cheerio.load(html);
+  const findWrapper = (title) =>
+    $('h2')
+      .filter(function () { return $(this).text().trim() === title; })
+      .closest('div')
+      .parent();
+  const moving = findWrapper(sectionTitle);
+  const anchor = findWrapper(afterTitle);
+  if (moving.length && anchor.length) {
+    moving.insertAfter(anchor);
+  }
+  return $.html();
 }
 
 function injectLinks(html, resume) {
@@ -111,8 +146,9 @@ function injectLinks(html, resume) {
   }
 
   // Map resume sections to the field that should be linked
-  // work -> position, projects -> name, education -> institution
+  // work -> position AND name, projects -> name, education -> institution
   linkifyEntries(resume.work, 'position');
+  linkifyEntries(resume.work, 'name');
   linkifyEntries(resume.projects, 'name');
   linkifyEntries(resume.education, 'institution');
   linkifyEntries(resume.awards, 'title');
@@ -145,12 +181,15 @@ function main() {
     setupBabel();
     const render = getThemeRender();
     const resume = loadResumeData('./src/resume.json');
+    resume.projects = sortProjectsByStartDateDesc(resume.projects);
 
   let html = render(resume);
   html = mapMissingFonts(html);
   html = rewriteFontUrls(html);
   html = injectBaseFontSize(html, '11.5px');
   html = injectLinks(html, resume);
+  html = replaceDateRangeDashes(html);
+  html = moveSectionAfter(html, 'Education', 'Projects');
   writeHtml('./src/resume.html', html);
 
     console.log('Resume successfully generated: src/resume.html');
