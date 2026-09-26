@@ -152,7 +152,7 @@
       "highlights": [
         "Delivered 8 client projects (Horizon voucher platform, Lime CRM, e-commerce and client sites) plus 5 internal products",
         "Self-hosted LLM stack: LiteLLM OpenAI-compatible gateway, Onyx chat API, and Langfuse observability on every AI call",
-        "CraftLead: agentic lead-hunting platform (4-agent swarm, 6-signal match engine) running the agency's own commission pipeline",
+        "CraftLead: agentic lead-hunting platform (4-agent swarm, capability match engine) running the agency's own commission pipeline",
         "Self-hosted infrastructure on a 3-machine Tailscale fleet: ~40 services in 79 Docker containers on Dokploy with zero public ports via Cloudflare tunnels, handling ~60k HTTP requests/day",
         "CraftHost GPU server serving 29 local models at ~660 LLM requests/day"
       ]
@@ -239,10 +239,10 @@
     {
       "name": "CraftLead",
       "startDate": "2026-04-25",
-      "description": "AI-powered lead-intelligence platform for the Craftale web agency. Aggregates freelance and web-dev project postings from 12+ sources, scores them against a capability taxonomy, and drafts personalized outreach through an autonomous 4-agent swarm.",
+      "description": "AI-powered lead-intelligence platform for the Craftale web agency. Aggregates freelance and web-dev project postings across platforms (Upwork, Freelancer, Web3.career), scores them against a capability taxonomy, and drafts personalized outreach through an autonomous 4-agent swarm.",
       "highlights": [
         "4-agent swarm (Planner -> Researcher -> Critic -> Executor) with a confidence-gated feedback loop",
-        "12+ lead-source adapters (Upwork, LinkedIn, Web3.career and more) behind a unified match engine",
+        "Multi-source lead aggregation behind a unified match engine (Upwork, Freelancer, Web3.career via Apify, SerpAPI and RapidAPI adapters)",
         "OpenClaw agent orchestration over MCP, backed by a self-hosted OpenAI-compatible gateway (Gemma 4 12B)",
         "Typed inter-agent contract (PlannerTask / ResearchObservation / ExecutorReport) persisted to Supabase, with Langfuse tracing",
         "Exposes its SDK as an MCP server so the same tools are callable from Claude, plus a credit system gating premium analysis"
