@@ -150,7 +150,7 @@
       "website": "https://craftale.it",
       "summary": "Freelance developer at Craftale, a web agency run together with another freelancer, Flavio Biondo; own the AI and infrastructure stack end to end alongside full-stack Next.js/Supabase delivery.",
       "highlights": [
-        "Delivered 7 client projects (Horizon voucher platform, Lime CRM, e-commerce and client sites) plus 5 internal products",
+        "Delivered 8 client projects (Horizon voucher platform, Lime CRM, e-commerce and client sites) plus 5 internal products",
         "Self-hosted LLM stack: LiteLLM OpenAI-compatible gateway, Onyx chat API, and Langfuse observability on every AI call",
         "CraftLead: agentic lead-hunting platform (4-agent swarm, 6-signal match engine) running the agency's own commission pipeline",
         "Self-hosted infrastructure on a 3-machine Tailscale fleet: ~40 services in 79 Docker containers on Dokploy with zero public ports via Cloudflare tunnels, handling ~60k HTTP requests/day",
