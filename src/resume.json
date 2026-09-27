@@ -217,7 +217,7 @@
         "Vercel AI Gateway multi-provider routing (OpenAI, Anthropic, Google) with AI cost tracking and generation analytics",
         "Automated leadgen pipeline turning raw leads into generated sites; sites auto-deploy to <subdomain>.sitelab.build",
         "Stripe billing (seat + metered usage) with multi-tenant model tiers for the Italian SMB market",
-        "Supabase Postgres with RLS on every table, pgvector, and generated types across 92 migrations"
+        "Supabase Postgres with RLS on every table, pgvector, and generated types across 86 migrations"
       ],
       "website": "https://www.sitelab.build/"
     },
