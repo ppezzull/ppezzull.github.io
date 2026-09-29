@@ -61,7 +61,7 @@
         "Database design",
         "Networking",
         "Cryptography",
-        "Web technologies (HTML, CSS, JS)",
+        "Web technologies (HTML, CSS, JS, WordPress)",
         "Arduino programming"
       ]
     }
@@ -72,7 +72,8 @@
         "HTML / JSX / TSX",
         "CSS / Tailwind CSS",
         "React / Next.js / Vite",
-        "Shadcn / Acernity / Origin UI"
+        "Shadcn / Acernity / Origin UI",
+        "WordPress / CMS"
       ],
       "name": "Frontend"
     },
