@@ -223,8 +223,9 @@
     {
       "name": "SiteLab",
       "startDate": "2025-10-02",
-      "description": "Multi-tenant AI platform turning client intake into a deployed Next.js site. Evolved from a Vercel + v0-SDK prototype into a production pnpm monorepo SaaS: client questionnaire app, operator backoffice, and three shared packages.",
+      "description": "Multi-tenant AI platform turning client intake into a deployed Next.js site. Evolved from a Vercel + v0-SDK prototype into a production pnpm monorepo SaaS, then migrated its generation engine to Claude managed agents: MCP tools and a working website-generation pipeline driven by Claude Code managed agents.",
       "highlights": [
+        "Migration to Claude managed agents: custom MCP server plus a working website-generation pipeline running on Claude Code managed agents",
         "Next.js 16, React 19, TypeScript strict, Tailwind 4, Vitest, 6-gate CI",
         "9+ durable workflows on Workflow DevKit: questionnaire -> RAG brief -> wireframes -> Next.js via V0 SDK -> preview -> publish",
         "Vercel AI Gateway multi-provider routing (OpenAI, Anthropic, Google) with AI cost tracking and generation analytics",
@@ -232,7 +233,8 @@
         "Stripe billing (seat + metered usage) with multi-tenant model tiers for the Italian SMB market",
         "Supabase Postgres with RLS on every table, pgvector, and generated types across 86 migrations"
       ],
-      "website": "https://www.sitelab.build/"
+      "website": "https://www.sitelab.build/",
+      "endDate": "2026-10-31"
     },
     {
       "name": "PolyAgents",
