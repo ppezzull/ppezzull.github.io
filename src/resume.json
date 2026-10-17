@@ -4,9 +4,9 @@
   },
   "basics": {
     "name": "Pietro Jairo Pezzullo",
-    "label": "Backend & AI Engineer",
+    "label": "Full-stack & AI engineer",
     "image": "https://github.com/ppezzull.png",
-    "summary": "Fullstack developer with expertise in blockchain technologies, AI integration, and DevOps infrastructure. Computer science graduate of 42 Roma Luiss with proven skills in hackathon competitions and full-stack development. Trilingual professional combining technical knowledge with collaborative teamwork.",
+    "summary": "Full-stack & AI engineer delivering production systems end to end: TypeScript/Next.js apps, LLM integrations (agents, RAG, gateways), and self-hosted infrastructure (40+ services on a GPU fleet). Currently also an AI educator in Italian schools (STEM-IA program). Computer science graduate of 42 Roma Luiss; prize winner at ETHGlobal hackathons. Trilingual professional combining technical depth with collaborative teamwork.",
     "email": "pezzullopietro04@gmail.com",
     "location": {
       "city": "Rome",
@@ -116,16 +116,16 @@
     },
     {
       "keywords": [
-        "Prompt Engineering",
-        "Gemini API / Vertex AI",
-        "v0 SDK",
-        "Vercel Gateway",
-        "AI Proxies / OpenAI-Compatible Gateways",
-        "Langfuse Tracing & Observability",
         "Agent Configuration",
         "RAG (Retrieval-Augmented Generation)",
+        "AI Proxies / OpenAI-Compatible Gateways",
+        "Langfuse Tracing & Observability",
+        "Gemini API / Vertex AI",
+        "Vercel Gateway",
+        "v0 SDK",
         "Embeddings",
-        "LangChain"
+        "LangChain",
+        "Prompt Engineering"
       ],
       "name": "AI"
     }
@@ -137,7 +137,7 @@
       "date": "2022-06-01"
     },
     {
-      "name": "TOEFL, iBT",
+      "name": "TOEFL iBT (88/120)",
       "issuer": "Educational Testing Service",
       "date": "2025-02-02"
     }
@@ -149,7 +149,7 @@
       "startDate": "2025-07-01",
       "location": "Remote (Italy)",
       "website": "https://craftale.it",
-      "summary": "Freelance developer at Craftale, a web agency run together with another freelancer, Flavio Biondo; own the AI and infrastructure stack end to end alongside full-stack Next.js/Supabase delivery.",
+      "summary": "Freelance developer at Craftale, a web agency run together with another freelancer, Flavio Biondo; own the AI and infrastructure stack end to end alongside full-stack Next.js/Supabase delivery. Part-time alongside full-time roles until October 2026.",
       "highlights": [
         "Delivered 8 client projects (Horizon voucher platform, Lime CRM, e-commerce and client sites) plus 5 internal products",
         "Self-hosted LLM stack: LiteLLM OpenAI-compatible gateway, Onyx chat API, and Langfuse observability on every AI call",
@@ -186,7 +186,7 @@
     },
     {
       "name": "Hackathons & ETHGlobal",
-      "position": "Fullstack Bounty Hunter",
+      "position": "Independent Developer, ETHGlobal Hackathon Circuit",
       "startDate": "2025-06-01",
       "endDate": "2025-09-01",
       "location": "ETHGlobal Prague; Mantle cookathon; ETHGlobal Cannes; Napuleth; ETHGlobal DeFi Unite; Onchain Summer",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript\u2011centric stacks, working mostly on backend services and some frontend integrations.",
+      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript‑centric stacks, working mostly on backend services and some frontend integrations.",
       "website": "https://originsolutions.it",
       "name": "Origin Solutions Srl",
       "location": "Rome, Italy",
