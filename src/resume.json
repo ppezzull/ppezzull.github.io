@@ -188,11 +188,12 @@
     {
       "name": "Hackathons & ETHGlobal",
       "position": "Independent Developer, ETHGlobal Hackathon Circuit",
-      "startDate": "2025-06-01",
-      "endDate": "2025-09-01",
+      "startDate": "2023-10-01",
       "location": "ETHGlobal Prague; Mantle cookathon; ETHGlobal Cannes; Napuleth; ETHGlobal DeFi Unite; Onchain Summer",
-      "summary": "Completed six hackathons this summer: ETHGlobal Prague, Mantle cookathon, ETHGlobal Cannes, Napuleth, ETHGlobal DeFi Unite, and Onchain Summer. First three were solo; later events were team-based with two peers from 42 Roma Luiss.",
+      "summary": "Ongoing independent hackathon track starting in 2023: ETH Rome, Urbe Campus, the 2025 ETHGlobal circuit (Prague, Cannes, DeFi Unite), Mantle cookathon, Napuleth and Onchain Summer, and ETHGlobal Cannes 2026. Early events were solo; from DeFi Unite onward mostly team-based with two peers from 42 Roma Luiss.",
       "highlights": [
+        "Won the Hedera prize at ETHGlobal Cannes 2026 with PolyAgents, an autonomous AI trading vault",
+        "Won the Urbe Campus hackathon (2024), leading the team and implementing the Solidity contract",
         "Started zkMed at ETHGlobal Prague (solo) as a contract prototype",
         "Co-founded 1Balancer at DeFi Unite with two peers",
         "Learned Foundry for testing, deployment, and scripting",
