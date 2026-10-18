@@ -6,7 +6,7 @@
     "name": "Pietro Jairo Pezzullo",
     "label": "Full-stack & AI engineer",
     "image": "https://github.com/ppezzull.png",
-    "summary": "Full-stack & AI engineer delivering production systems end to end: TypeScript and Next.js apps, LLM integrations for agents, RAG and gateways, and self-hosted infrastructure with 40+ services on a GPU fleet. Currently also an AI educator in Italian schools within the STEM-IA program. Computer science graduate of 42 Roma Luiss; prize winner at ETHGlobal hackathons. Trilingual professional combining technical depth with collaborative teamwork.",
+    "summary": "Full-stack & AI engineer delivering production systems end to end: TypeScript and Next.js apps, LLM integrations for agents, RAG and gateways, and self-hosted infrastructure with 40+ services on a GPU fleet. Currently also an AI educator in Italian schools within the STEM-IA program. Computer science graduate of 42 Roma Luiss; prize winner at ETHGlobal hackathons. Trilingual professional combining technical depth with collaborative teamwork. Available full-time from November 2026.",
     "email": "pezzullopietro04@gmail.com",
     "location": {
       "city": "Rome",
@@ -165,8 +165,7 @@
       "location": "Rome, Italy",
       "summary": "Design and delivery of AI courses and hands-on labs for public and private schools within bando-funded STEM-IA programs: mindful use of generative AI tools, AI literacy, and related digital skills, for students and school staff across school orders and grades. Currently teaching two courses: AI for STEM subjects and AI for language learning, the latter leveraging native command of Italian and Spanish plus C1 English.",
       "highlights": [
-        "Course design and classroom delivery on generative AI and digital skills for school audiences",
-        "Teaching two courses: AI for STEM and AI for languages"
+        "Course design and classroom delivery on generative AI and digital skills for school audiences"
       ]
     },
     {
@@ -181,8 +180,7 @@
         "Led development and product design of SiteLab, an AI website-generation platform: typed schemas, provider-agnostic LLM routing, delta-prompt edits, automated Vercel deploys",
         "Built an AI-powered conversational agent with search, ranking, and four-language support",
         "MCP server exposing a controlled tool surface to LLM agents over backend services",
-        "Production chat app in Next.js 16 / React 19 with streaming responses, hardened by red-team testing and CI smoke suites",
-        "Skills gained: TypeScript/Node service design, LLM integration patterns (agents, RAG, prompt engineering)"
+        "Production chat app in Next.js 16 / React 19 with streaming responses, hardened by red-team testing and CI smoke suites"
       ]
     },
     {
@@ -196,13 +194,11 @@
         "Won the Urbe Campus hackathon (2024), leading the team and implementing the Solidity contract",
         "Started zkMed at ETHGlobal Prague (solo) as a contract prototype",
         "Co-founded 1Balancer at DeFi Unite with two peers",
-        "Learned Foundry for testing, deployment, and scripting",
-        "Built my own reusable Scaffold template for rapid prototyping",
-        "Won small bounties and credits across events"
+        "Built my own reusable Scaffold template for rapid prototyping"
       ]
     },
     {
-      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript‑centric stacks, working mostly on backend services and some frontend integrations.",
+      "summary": "Hired after demonstrating Next.js and TypeScript skills at ETH Rome 2024 to one of my teammates. Although the company primarily builds Web2 products, I was brought on to contribute to modern, TypeScript-centric stacks, working mostly on backend services and some frontend integrations.",
       "website": "https://originsolutions.it",
       "name": "Origin Solutions Srl",
       "location": "Rome, Italy",
@@ -320,7 +316,7 @@
   "awards": [
     {
       "title": "Hedera Prize Winner at ETHGlobal Cannes",
-      "date": "2026-01-01",
+      "date": "2026-07-01",
       "awarder": "Hedera and ETHGlobal",
       "summary": "Won the Hedera prize at ETHGlobal Cannes."
     },
