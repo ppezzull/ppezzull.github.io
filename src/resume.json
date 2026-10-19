@@ -180,7 +180,7 @@
         "Led development and product design of SiteLab, an AI website-generation platform: typed schemas, provider-agnostic LLM routing, delta-prompt edits, automated Vercel deploys",
         "Built an AI-powered conversational agent with search, ranking, and four-language support",
         "MCP server exposing a controlled tool surface to LLM agents over backend services",
-        "Production chat app in Next.js 16 / React 19 with streaming responses, hardened by red-team testing and CI smoke suites"
+        "Chat app in Next.js 16 / React 19 with streaming responses, hardened by red-team testing and CI smoke suites"
       ]
     },
     {
