@@ -179,6 +179,7 @@
       "website": "https://moodglobalservices.com/",
       "summary": "Backend and AI specialist across two products: SiteLab, an AI website-generation platform (led development and product design), and the AI layer of a client platform (conversational agent, search, multilingual support). Joined after winning the Chainlink prize at the Naples web3 hackathon with the Napul.ETH team.",
       "highlights": [
+        "Built the Vivaticket pre-sales conversational agent as sole AI engineer, end to end: MCP server on AWS ECS Fargate, multilingual intent gating EN/IT/FR/ES, read-only tools over catalogue and quote engine, human escalation loop, never touching orders or payments",
         "Led development and product design of SiteLab, an AI website-generation platform: typed schemas, provider-agnostic LLM routing, delta-prompt edits, automated Vercel deploys",
         "Built an AI-powered conversational agent with search, ranking, and four-language support",
         "MCP server exposing a controlled tool surface to LLM agents over backend services",
