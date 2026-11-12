@@ -183,23 +183,37 @@ function writeHtml(outPath, html) {
   fs.writeFileSync(path.resolve(outPath), html);
 }
 
+// Fixed top-right link to the other language version of the resume.
+function injectLangSwitch(html, href, label) {
+  const el = `<div style="position:fixed;top:14px;right:18px;z-index:9999;font:600 13px/1 -apple-system,'Segoe UI',sans-serif;"><a href="${href}" style="color:#343434;text-decoration:underline;">${label}</a></div>`;
+  return html.replace('</body>', `${el}</body>`);
+}
+
+const LANGS = [
+  { json: './src/resume.json', out: './src/resume.html', switch: { href: './resume-it.html', label: 'Italiano' } },
+  { json: './src/resume-it.json', out: './src/resume-it.html', switch: { href: './resume.html', label: 'English' } }
+];
+
 function main() {
   try {
     setupBabel();
     const render = getThemeRender();
-    const resume = loadResumeData('./src/resume.json');
-    resume.projects = sortProjectsByStartDateDesc(resume.projects);
+    for (const lang of LANGS) {
+      const resume = loadResumeData(lang.json);
+      resume.projects = sortProjectsByStartDateDesc(resume.projects);
 
-  let html = render(resume);
-  html = mapMissingFonts(html);
-  html = rewriteFontUrls(html);
-  html = injectBaseFontSize(html, '11.5px');
-  html = injectLinks(html, resume);
-  html = replaceDateRangeDashes(html);
-  html = moveSectionAfter(html, 'Education', 'Projects');
-  writeHtml('./src/resume.html', html);
+      let html = render(resume);
+      html = mapMissingFonts(html);
+      html = rewriteFontUrls(html);
+      html = injectBaseFontSize(html, '11.5px');
+      html = injectLinks(html, resume);
+      html = replaceDateRangeDashes(html);
+      html = moveSectionAfter(html, 'Education', 'Projects');
+      html = injectLangSwitch(html, lang.switch.href, lang.switch.label);
+      writeHtml(lang.out, html);
 
-    console.log('Resume successfully generated: src/resume.html');
+      console.log(`Resume successfully generated: ${lang.out}`);
+    }
   } catch (error) {
     console.error('Failed to generate resume:', error);
     process.exitCode = 1;

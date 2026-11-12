@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "theme": "professional"
+  },
+  "basics": {
+    "name": "Pietro Jairo Pezzullo",
+    "label": "Sviluppatore full-stack e AI",
+    "image": "https://github.com/ppezzull.png",
+    "summary": "Sviluppatore full-stack e AI che consegna sistemi in produzione end to end: applicazioni TypeScript e Next.js, integrazioni LLM per agenti, RAG e gateway, infrastruttura self-hosted con oltre 40 servizi su una flotta GPU. Attualmente anche formatore AI nelle scuole italiane nel programma STEM-IA. Certificazione Common Core in Informatica alla 42 Roma Luiss; vincitore di premi agli hackathon ETHGlobal. Trilingue, unisce profondità tecnica e lavoro collaborativo. Disponibile full-time da novembre 2026.",
+    "email": "pezzullopietro04@gmail.com",
+    "location": {
+      "city": "Roma",
+      "countryCode": "IT"
+    },
+    "profiles": [
+      {
+        "username": "pietro-jairo-pezzullo",
+        "url": "https://www.linkedin.com/in/pietro-jairo-pezzullo",
+        "network": "linkedin"
+      },
+      {
+        "url": "https://github.com/ppezzull",
+        "username": "ppezzull",
+        "network": "github"
+      }
+    ]
+  },
+  "education": [
+    {
+      "startDate": "2023-01-01",
+      "endDate": "2025-12-01",
+      "area": "Informatica",
+      "studyType": "Certificazione Common Core",
+      "institution": "42 Roma Luiss",
+      "website": "https://42roma.it/",
+      "courses": [
+        "Sviluppo software in UNIX/LINUX",
+        "GitHub e Co-Working",
+        "Scripting in bash",
+        "C • C++ • Bash • Typescript",
+        "Docker • basi di DevOps",
+        "Thread",
+        "Strutture dati e algoritmi",
+        "Programmazione orientata agli oggetti",
+        "Basi di networking",
+        "Web Services (HTTP, REST, WebSocket)",
+        "Macchine virtuali",
+        "Sviluppo fullstack"
+      ]
+    },
+    {
+      "endDate": "2024-06-01",
+      "startDate": "2020-10-01",
+      "area": "Sistemi Informativi Aziendali",
+      "studyType": "Diploma Tecnico",
+      "institution": "IIS Leopoldo Pirelli, Roma",
+      "website": "https://www.leopoldopirelli.edu.it/indirizzo-sistemi-informativi-aziendali-sia/",
+      "courses": [
+        "Diritto • Economia Politica • Ragioneria",
+        "C++ • Python • Visual Basic",
+        "Progettazione basi di dati",
+        "Networking",
+        "Crittografia",
+        "Tecnologie web (HTML, CSS, JS, WordPress)",
+        "Programmazione Arduino"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "HTML / JSX / TSX",
+        "CSS / Tailwind CSS",
+        "React / Next.js / Vite",
+        "Shadcn / Acernity / Origin UI",
+        "WordPress / CMS"
+      ],
+      "name": "Frontend"
+    },
+    {
+      "keywords": [
+        "Node.js",
+        "Rust",
+        "Python / FastAPI",
+        "MongoDB / Postgres",
+        "Supabase / Prisma",
+        "Design API (REST/GraphQL)",
+        "SSR (Server-Side Rendering)",
+        "JWT / Jose"
+      ],
+      "name": "Backend"
+    },
+    {
+      "keywords": [
+        "Solidity",
+        "Thirdweb / Privy / Wagmi",
+        "Foundry / Hardhat",
+        "Viem / Ethers.js",
+        "Openzeppelin / Chainlink",
+        "Agent Payment Orchestration"
+      ],
+      "name": "Blockchain"
+    },
+    {
+      "keywords": [
+        "Alpine / Ubuntu / Debian",
+        "Docker",
+        "Self-Hosting / Deploy Dokploy",
+        "Gestione VPS",
+        "Cloudflare",
+        "Configurazione domini",
+        "Git / GitHub",
+        "CI/CD"
+      ],
+      "name": "DevOps"
+    },
+    {
+      "keywords": [
+        "Configurazione agenti",
+        "RAG (Retrieval-Augmented Generation)",
+        "Proxy AI / Gateway OpenAI-Compatible",
+        "Tracing e osservabilità Langfuse",
+        "Gemini API / Vertex AI",
+        "Vercel Gateway",
+        "v0 SDK",
+        "Embeddings",
+        "LangChain",
+        "Prompt Engineering"
+      ],
+      "name": "AI"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "PCAP - Certified Associate in Python Programming",
+      "issuer": "Python Institute",
+      "date": "2022-06-01"
+    },
+    {
+      "name": "TOEFL iBT 88/120",
+      "issuer": "Educational Testing Service, sostenuto al British School Roma",
+      "date": "2025-02-02"
+    }
+  ],
+  "work": [
+    {
+      "name": "Craftale Web Agency",
+      "position": "Sviluppatore Freelance",
+      "startDate": "2025-07-01",
+      "location": "Remote (Italia)",
+      "website": "https://craftale.it",
+      "summary": "Sviluppatore freelance in Craftale, web agency gestita insieme a un altro freelance; responsabile end to end dello stack AI e dell'infrastruttura, accanto alla delivery full-stack Next.js/Supabase. Attività part-time accanto a ruoli full-time fino a ottobre 2026.",
+      "highlights": [
+        "Consegnati 8 progetti clienti (piattaforma voucher Horizon, Lime CRM, e-commerce e siti clienti) più 5 prodotti interni",
+        "Stack LLM self-hosted: gateway OpenAI-compatible LiteLLM, chat API Onyx e osservabilità Langfuse su ogni chiamata AI",
+        "CraftLead: piattaforma agentic lead-hunting (sciame di 4 agenti, motore di match multi-segnale pesato) che gestisce la pipeline di commissioni dell'agenzia",
+        "Infrastruttura self-hosted su flotta Tailscale di 3 macchine: circa 40 servizi in 79 container Docker su Dokploy senza porte pubbliche, via tunnel Cloudflare, circa 60k richieste HTTP/giorno",
+        "Server GPU CraftHost che serve 29 modelli locali a circa 660 richieste LLM/giorno"
+      ]
+    },
+    {
+      "name": "EduDidacta S.r.l.",
+      "position": "Formatore AI",
+      "startDate": "2026-10-08",
+      "location": "Roma, Italia",
+      "summary": "Progettazione ed erogazione di corsi AI e laboratori pratici per scuole pubbliche e private nell'ambito di programmi STEM-IA finanziati da bandi: uso consapevole degli strumenti di AI generativa, alfabetizzazione AI e competenze digitali correlate, per studenti e personale scolastico di ogni ordine e grado. Attualmente insegno in due corsi: AI per le discipline STEM e AI per l'apprendimento delle lingue, quest'ultimo sfruttando la padronanza nativa di italiano e spagnolo oltre all'inglese C1.",
+      "highlights": [
+        "Progettazione dei corsi ed erogazione in aula su AI generativa e competenze digitali per pubblici scolastici",
+        "Insegno in due corsi: AI per le STEM e AI per le lingue",
+        "La formazione copre gli obblighi di alfabetizzazione del Regolamento Europeo sull'AI e il GDPR a scuola, accanto alla valutazione critica dell'AI generativa"
+      ]
+    },
+    {
+      "name": "Mood Global Services",
+      "position": "Sviluppatore Backend & Specialista AI",
+      "startDate": "2025-10-28",
+      "endDate": "2026-10-31",
+      "location": "Remote (Amsterdam)",
+      "website": "https://moodglobalservices.com/",
+      "summary": "Backend e specialista AI su due prodotti: SiteLab, piattaforma di generazione siti con AI (ne ho guidato sviluppo e product design), e lo strato AI di una piattaforma cliente (agente conversazionale, ricerca, supporto multilingue). Entrato dopo aver vinto il premio Chainlink al web3 hackathon di Napoli con il team Napul.ETH.",
+      "highlights": [
+        "Costruito l'agente conversazionale pre-vendita per una grande azienda italiana di ticketing come unico ingegnere AI, end to end: server MCP su AWS ECS Fargate, intent gating multilingue EN/IT/FR/ES, tool read-only su catalogo e motore dei preventivi, loop di escalation umana, senza mai toccare ordini o pagamenti",
+        "Guidato sviluppo e product design di SiteLab, piattaforma di generazione siti con AI: schemi tipizzati, routing LLM provider-agnostic, modifiche delta-prompt, deploy automatici su Vercel",
+        "Costruito un agente conversazionale AI con ricerca, ranking e supporto in quattro lingue",
+        "Server MCP che espone una superficie di tool controllata agli agenti LLM sui servizi backend",
+        "Chat app in Next.js 16 / React 19 con risposte in streaming, irrobustita da red-team testing e suite smoke in CI"
+      ]
+    },
+    {
+      "name": "Hackathon & ETHGlobal",
+      "position": "Sviluppatore Indipendente, circuito hackathon ETHGlobal",
+      "startDate": "2023-10-01",
+      "location": "ETHGlobal Praga; Mantle cookathon; ETHGlobal Cannes; Napuleth; ETHGlobal DeFi Unite; Onchain Summer",
+      "summary": "Percorso hackathon indipendente continuativo dal 2023: ETH Rome, Urbe Campus, il circuito ETHGlobal 2025 (Praga, Cannes, DeFi Unite), il Mantle cookathon, Napuleth e Onchain Summer, ed ETHGlobal Cannes 2026. I primi eventi da solo; da DeFi Unite in poi principalmente in team con due colleghi della 42 Roma Luiss.",
+      "highlights": [
+        "Vinto il premio Hedera a ETHGlobal Cannes 2026 con PolyAgents, un vault autonomo di trading AI",
+        "Vinto l'hackathon Urbe Campus (2024), guidando il team e implementando il contratto Solidity",
+        "Avviato zkMed a ETHGlobal Praga (da solo) come prototipo di contratto",
+        "Co-fondato 1Balancer a DeFi Unite con due colleghi",
+        "Costruito il mio template Scaffold riutilizzabile per il prototyping rapido"
+      ]
+    },
+    {
+      "summary": "Assunto dopo aver dimostrato competenze Next.js e TypeScript a ETH Rome 2024 a uno dei miei compagni di team. Pur costruendo principalmente prodotti Web2, l'azienda mi ha inserito in stack moderni centrati su TypeScript, lavorando soprattutto su servizi backend e alcune integrazioni frontend.",
+      "website": "https://originsolutions.it",
+      "name": "Origin Solutions Srl",
+      "location": "Roma, Italia",
+      "position": "Sviluppatore Backend",
+      "startDate": "2024-11-01",
+      "endDate": "2025-06-01",
+      "highlights": [
+        "Sviluppo e integrazione di API REST con NestJS e Postman",
+        "Progettazione di schema PostgreSQL con Supabase",
+        "Expo per lo sviluppo di app mobile e flussi di deeplinking con Microsoft Azure",
+        "Server-side rendering (SSR) con Next.js per migliore UX e SEO",
+        "Query con tipi generati per interazioni col database type-safe",
+        "Integrazione Shadcn UI con Next.js per i componenti frontend"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SiteLab",
+      "startDate": "2025-10-02",
+      "description": "Piattaforma AI multi-tenant che trasforma l'intake cliente in un sito Next.js deployato. Evoluta da prototipo Vercel + v0-SDK a SaaS in monorepo pnpm di produzione, poi migrata nel motore di generazione a Claude managed agents: tool MCP e una pipeline funzionante di generazione siti guidata da Claude Code managed agents.",
+      "highlights": [
+        "Migrazione a Claude managed agents: server MCP custom più una pipeline funzionante di generazione siti su Claude Code managed agents",
+        "Next.js 16, React 19, TypeScript strict, Tailwind 4, Vitest, CI a 6 gate",
+        "Oltre 9 workflow durevoli su Workflow DevKit: questionario -> brief RAG -> wireframe -> Next.js via V0 SDK -> preview -> publish",
+        "Routing multi-provider su Vercel AI Gateway (OpenAI, Anthropic, Google) con tracking dei costi AI e analytics di generazione",
+        "Pipeline leadgen automatica che trasforma lead grezzi in siti generati; deploy automatico su <subdomain>.sitelab.build",
+        "Fatturazione Stripe (postazione + uso a consumo) con tier di modello multi-tenant per il mercato PMI italiano",
+        "Supabase Postgres con RLS su ogni tabella, pgvector e tipi generati su 86 migrazioni"
+      ],
+      "website": "https://www.sitelab.build/",
+      "endDate": "2026-10-31"
+    },
+    {
+      "name": "PolyAgents",
+      "startDate": "2026-04-03",
+      "endDate": "2026-06-24",
+      "description": "Vault autonomo di trading AI per i mercati binari BTC a 5 minuti di Polymarket, costruito per ETHGlobal Cannes 2026 (premio Hedera vinto). Un ciclo continuo scopre il mercato, chiede a un LLM una direzione, piazza ordini limite two-sided e rialimenta gli esiti in un loop auto-migliorante.",
+      "highlights": [
+        "Workspace Rust (6 crate) con motore a 8 stati esplicito",
+        "API HTTP axum + server MCP rmcp (18 tool) che espone il motore agli agenti e alla dashboard Next.js",
+        "Market-making passivo sul CLOB di Polymarket con reconciler ritardato che calcola fill e PnL post-risoluzione",
+        "Strato auto-migliorante (OpenClaw) che riscrive le guidance dalle coppie decisione/esito per il ciclo successivo",
+        "Tre modalità operative (simulatore, demo con ordini live sul CLOB, fully live) e cifratura AES-256-GCM per vault",
+        "API CLOB/Gamma di Polymarket, viem per USDC on-chain, auth wallet Privy, provisioning Terraform EC2"
+      ],
+      "website": "https://ethglobal.com/showcase/polyagents-gt9jt"
+    },
+    {
+      "name": "CraftLead",
+      "startDate": "2026-04-25",
+      "description": "Piattaforma di lead-intelligence AI per la web agency Craftale. Aggrega annunci di progetti freelance e web-dev su più piattaforme (Upwork, Freelancer, Web3.career), li punteggia su una tassonomia di capacità e redige outreach personalizzato tramite uno sciame autonomo di 4 agenti.",
+      "highlights": [
+        "Sciame di 4 agenti (Planner -> Researcher -> Critic -> Executor) con loop di feedback a confidence gate",
+        "Aggregazione lead multi-fonte (Upwork, Freelancer, Web3.career via adapter Apify, SerpAPI e RapidAPI) punteggiata da un motore di match multi-segnale pesato (skill, budget, disciplina, ruolo, seniority, freschezza)",
+        "Orchestrazione agenti OpenClaw su MCP, appoggiata a un gateway OpenAI-compatible self-hosted (Gemma 4 12B)",
+        "Contratto tipizzato tra agenti (PlannerTask / ResearchObservation / ExecutorReport) persistito su Supabase, con tracing Langfuse",
+        "Espone il suo SDK come server MCP così gli stessi tool sono invocabili da Claude, più un sistema di crediti per l'analisi premium"
+      ],
+      "website": "https://ethglobal.com/showcase/craftlead-19qsc"
+    },
+    {
+      "name": "Horizon",
+      "startDate": "2026-04-01",
+      "description": "Piattaforma voucher consegnata a un cliente tramite Craftale: i clienti acquistano voucher esperienza via Stripe, con edge function Supabase per il fulfillment e una pipeline AI di elaborazione form che struttura l'intake.",
+      "highlights": [
+        "Flusso di pagamento Stripe per l'acquisto dei voucher, con edge function Supabase a guidare il fulfillment",
+        "Elaborazione AI dei form per strutturare l'intake clienti",
+        "Consegna al cliente con assistenza post-lancio (aggiornamenti, backup, monitoraggio) sullo stack self-hosted dell'agenzia"
+      ],
+      "website": "https://horizonheaven.it"
+    },
+    {
+      "name": "Langfuse-OpenAI-Proxy",
+      "startDate": "2026-05-08",
+      "endDate": "2026-09-10",
+      "description": "Reverse proxy e gateway di osservabilità tra un'app LLM e qualsiasi backend OpenAI-compatible (LiteLLM, vLLM, Ollama): tracing Langfuse per richiesta con routing delle credenziali per progetto, zero modifiche all'app chiamante. Pubblicato su PyPI; deployabile come singolo container Docker.",
+      "highlights": [
+        "Shim dell'API Anthropic Messages (/v1/messages) che traduce il wire format di Claude da/per OpenAI, streaming SSE incluso con blocchi thinking/text/tool-use",
+        "Supporto profondo ai reasoning model di Ollama: routing nativo di think, sanitizer JSON-Schema per le grammar llama.cpp",
+        "Guardrail di streaming: cap wall-clock sotto il tetto 524 di Cloudflare e semaforo di concorrenza Ollama",
+        "Validazione host hardened anti-SSRF, rifiuto path-traversal e auth a token condiviso sullo shim Anthropic (fail closed)",
+        "FastAPI asincrono con flush Langfuse scollegato dal path di risposta, più cattura reale dei token usage in teardown anticipato"
+      ],
+      "website": "https://github.com/CraftaleAgency/Langfuse-OpenAI-Proxy"
+    },
+    {
+      "name": "zkMed",
+      "startDate": "2025-06-01",
+      "endDate": "2025-08-31",
+      "description": "Assicurazione sanitaria privacy-preserving: riscossione premi in stablecoin e pagamenti automatici dei sinistri, con vlayer MailProofs per la verifica DKIM, Chainlink Automation per i pagamenti programmati e pool assicurative con rendimento di circa il 4% APY.",
+      "highlights": [
+        "Vinte bounty: credito di audit CyberScope, grant Base USDC, accelerazione Chainlink",
+        "Wallet embedded Privy per social login e account abstraction",
+        "MailProofs per verifica di dominio e utente con hash di proof on-chain",
+        "Verifica e pagamento dei sinistri dei pazienti via mailproofs",
+        "Pool assicurative con yield via Aave"
+      ],
+      "website": "https://github.com/ppezzull/zkMed"
+    },
+    {
+      "name": "Scaffold-Privy-AA",
+      "startDate": "2025-07-01",
+      "endDate": "2025-09-01",
+      "description": "Toolkit per sviluppatori di dapp Ethereum con social login Privy e account abstraction, abbinato a Supabase per la row-level security tramite uno scambio di token server-side. Frontend Next.js, contratti Foundry, UI shadcn e tre branch: foundry, hardhat, supabase.",
+      "highlights": [
+        "Social login e account abstraction via Privy (wallet + embedded)",
+        "Server Action che verifica il JWT Privy e emette un JWT Supabase a breve durata per la RLS",
+        "Workflow di hot-reload dei contratti con Foundry e frontend che si adatta ai cambi di contratto",
+        "Componenti UI shadcn precostituiti e hook web3 (wagmi/viem) per lo sviluppo rapido"
+      ],
+      "website": "https://github.com/ppezzull/Scaffold-Privy-AA"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Vincitore premio Hedera a ETHGlobal Cannes",
+      "date": "2026-07-01",
+      "awarder": "Hedera e ETHGlobal",
+      "summary": "Vinto il premio Hedera a ETHGlobal Cannes."
+    },
+    {
+      "title": "Vincitore hackathon Urbe Campus",
+      "date": "2024-04-14",
+      "awarder": "Urbe.eth e BuidlGuidl",
+      "summary": "Pitch del progetto e guida del team vincitore; implementato lo smart contract in Solidity e sviluppati gli endpoint per il frontend Next.js, costruendo una piattaforma blockchain di raccolta fondi con scaffold-eth.",
+      "website": "https://www.linkedin.com/posts/pietro-jairo-pezzullo_im-thrilled-to-announce-that-our-team-emerged-activity-7177659459882672128-JXm7?utm_source=share&utm_medium=member_desktop&rcm=ACoAADsM03wBEsoY4tKY0R7JbZ75TclnMY4SiLc"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Italiano",
+      "fluency": "Madrelingua"
+    },
+    {
+      "language": "Spagnolo",
+      "fluency": "Madrelingua"
+    },
+    {
+      "language": "Inglese",
+      "fluency": "Professionale, B2, TOEFL iBT 88/120"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Open Source",
+      "keywords": [
+        "Strumenti per sviluppatori",
+        "Blockchain",
+        "Linux"
+      ]
+    },
+    {
+      "name": "Hackathon",
+      "keywords": [
+        "Prototyping rapido",
+        "Collaborazione in team",
+        "Networking"
+      ]
+    },
+    {
+      "name": "Basket",
+      "keywords": [
+        "Streetball",
+        "3x3",
+        "Ballislife"
+      ]
+    },
+    {
+      "name": "Fitness",
+      "keywords": [
+        "Calisthenics",
+        "Allenamento outdoor"
+      ]
+    },
+    {
+      "name": "Viaggi",
+      "keywords": [
+        "Avventure",
+        "Culture culinarie"
+      ]
+    }
+  ]
+}
