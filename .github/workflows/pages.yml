@@ -37,10 +37,13 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           mkdir -p site
-          # Publish resume at root as index.html
+          # English resume at root as index.html
           cp -v src/resume.html site/index.html
+          # Italian resume alongside it; its language switch points back to root
+          cp -v src/resume-it.html site/resume-it.html
           # Fix font paths for root (from ../fonts/ to ./fonts/)
-          sed -i 's|../fonts/|./fonts/|g' site/index.html || true
+          sed -i 's|../fonts/|./fonts/|g' site/index.html site/resume-it.html || true
+          sed -i 's|href="./resume.html"|href="./"|g' site/resume-it.html || true
           # Include fonts folder if present
           if [ -d fonts ]; then cp -rv fonts site/; fi
 
